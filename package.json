@@ -2,13 +2,13 @@
   "name": "platzi-optimizacion-web",
   "version": "0.2.0",
   "description": "Proyecto del curso de Optimizacion Web de Platzi",
-  "author": "@jonalvarezz",
+  "author": "@alejandroverita",
   "main": "serve.js",
   "scripts": {
     "start": "npm run serve",
     "dev": "concurrently \"webpack -w\" \"micro-dev\"",
     "export": "node export.js",
-    "build": "webpack -p && node export",
+    "build": "webpack --mode production && node export",
     "serve": "serve .",
     "pre-commit": "pretty-quick --staged",
     "prepare": "husky install"
@@ -29,15 +29,15 @@
     "lodash": "^4.17.21",
     "lozad": "^1.16.0",
     "micro": "^9.3.4",
-    "micro-dev": "^3.0.0",
+    "micro-dev": "^0.0.2",
     "modal-video": "^2.4.3",
     "prettier": "2.3.1",
     "pretty-quick": "^3.1.0",
-    "serve": "^12.0.0",
+    "serve": "^12.0.1",
     "style-loader": "^2.0.0",
-    "webpack": "^4.46.0",
+    "webpack": "^5.60.0",
     "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.1.0"
